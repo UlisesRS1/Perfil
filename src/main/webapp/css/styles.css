@@ -1,0 +1,127 @@
+/* Colores personalizados */
+:root {
+    --azul-principal: #2966cb;
+    --azul-mas-claro: #5a88d6;
+    --azul-muy-claro: #a1bbee;
+    --blanco: #ffffff;
+    --gris-oscuro: #353535;
+}
+
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--azul-muy-claro);
+    color: var(--gris-oscuro);
+}
+
+/* Barra de navegación */
+.navbar {
+    background-color: var(--azul-principal);
+}
+
+.navbar .nav-link {
+    color: var(--blanco);
+}
+
+.navbar .nav-link:hover {
+    color: var(--azul-mas-claro);
+}
+
+/* Encabezado */
+header {
+    background-color: var(--blanco);
+    border-bottom: 2px solid var(--azul-mas-claro);
+}
+
+header h1 {
+    color: var(--azul-principal);
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+header p {
+    color: var(--gris-oscuro);
+    font-size: 1.25rem;
+}
+
+/* Sección Sobre Mí */
+#about {
+    background-color: var(--blanco);
+}
+
+#about h2, #about h3 {
+    color: var(--azul-principal);
+}
+
+#about p {
+    font-size: 1rem;
+    color: var(--gris-oscuro);
+}
+
+#about ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+#about ul li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+#about ul li i {
+    color: var(--azul-principal);
+    margin-right: 10px;
+}
+
+/* Sección Proyectos */
+#projects {
+    background-color: var(--azul-muy-claro);
+}
+
+#projects h2 {
+    color: var(--azul-principal);
+    margin-bottom: 30px;
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card-title {
+    color: var(--azul-principal);
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.card-text {
+    color: var(--gris-oscuro);
+    font-size: 1rem;
+}
+
+/* Sección Promedio */
+section.py-5 h2 {
+    color: var(--azul-principal);
+    font-size: 2rem;
+}
+
+section.py-5 p.lead {
+    font-size: 1.5rem;
+    color: var(--gris-oscuro);
+}
+
+/* Footer */
+footer {
+    background-color: var(--gris-oscuro);
+    color: var(--blanco);
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
