@@ -40,9 +40,9 @@
         <!-- Sección principal con foto y nombre -->
         <header class="bg-light text-center py-5">
             <div class="container">
-                <h:graphicImage value="#{resource[habilidadesAlumno.foto]}" alt="Foto" styleClass="img-fluid rounded-circle mb-4" style="width: 150px; height: 150px;" />
-                <h1 class="display-4">#{habilidadesAlumno.nombre}</h1>
-                <p class="lead text-muted">#{habilidadesAlumno.carrera}</p>
+                <h:graphicImage value="#{resource[perfil.foto]}" alt="Foto" styleClass="img-fluid rounded-circle mb-4" style="width: 150px; height: 150px;" />
+                <h1 class="display-4">#{perfil.nombre}</h1>
+                <p class="lead text-muted">#{perfil.carrera}</p>
             </div>
         </header>
 
@@ -60,16 +60,16 @@
                     <div class="col-lg-3">
                         <h3>Lenguajes de Programación</h3>
                         <ul class="list-unstyled">
-                            <li><i class="bi bi-check-circle"></i> #{habilidadesAlumno.lenguajesProgramacion[0]}</li>
-                            <li><i class="bi bi-check-circle"></i> #{habilidadesAlumno.lenguajesProgramacion[1]}</li>
-                            <li><i class="bi bi-check-circle"></i> #{habilidadesAlumno.lenguajesProgramacion[2]}</li>
+                            <li><i class="bi bi-check-circle"></i> #{perfil.lenguajesProgramacion[0]}</li>
+                            <li><i class="bi bi-check-circle"></i> #{perfil.lenguajesProgramacion[1]}</li>
+                            <li><i class="bi bi-check-circle"></i> #{perfil.lenguajesProgramacion[2]}</li>
                         </ul>
                     </div>
                     <div class="col-lg-3">
                         <h3>Bases de datos</h3>
                         <ul class="list-unstyled">
-                            <li><i class="bi bi-check-circle"></i> #{habilidadesAlumno.basesDatos[0]}</li>
-                            <li><i class="bi bi-check-circle"></i> #{habilidadesAlumno.basesDatos[1]}</li>
+                            <li><i class="bi bi-check-circle"></i> #{perfil.basesDatos[0]}</li>
+                            <li><i class="bi bi-check-circle"></i> #{perfil.basesDatos[1]}</li>
                         </ul>
                     </div>
                 </div>
@@ -84,7 +84,7 @@
                     <div class="col-md-12">
                         <div class="card mb-12 shadow-sm">
                             <div class="card-body">
-                                <h5 class="card-title">#{habilidadesAlumno.proyectosRealizados[0]}</h5>
+                                <h5 class="card-title">#{perfil.proyectosRealizados[0]}</h5>
                                 <p class="card-text">Proyecto académico con el fin de desarrollar un sitio web para un emprendimiento; La empresa se llama PayKawaii y se dedica a la elaboración de pays de queso</p>
                             </div>
                         </div>
@@ -97,14 +97,14 @@
         <section class="py-5 bg-white">
             <div class="container text-center">
                 <h2>Promedio</h2>
-                <p class="lead">#{habilidadesAlumno.promedio}</p>
+                <p class="lead">#{perfil.promedio}</p>
             </div>
         </section>
 
         <!-- Footer -->
         <footer id="contact" class="bg-dark text-white py-4">
             <div class="container text-center">
-                <p>Portafolio creado por #{habilidadesAlumno.nombre} - 2024</p>
+                <p>Portafolio creado por #{perfil.nombre} - 2024</p>
             </div>
         </footer>
 

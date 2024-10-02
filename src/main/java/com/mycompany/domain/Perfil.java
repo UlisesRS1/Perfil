@@ -5,7 +5,7 @@ import jakarta.inject.Named;
 
 @Named
 @RequestScoped
-public class HabilidadesAlumno {
+public class Perfil {
     private String nombre;
     private String carrera;
     private String foto;
@@ -14,7 +14,7 @@ public class HabilidadesAlumno {
     private String[] proyectosRealizados;
     private double promedio;
 
-    public HabilidadesAlumno() {
+    public Perfil() {
         this.nombre = "Ulises Rodriguez Solorzano";
         this.carrera = "Tecnologias de la información y comunicaciones";
         this.foto = "images/perfil_image.jpeg";
